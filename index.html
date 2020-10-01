@@ -8,22 +8,37 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#" class="brand">Brand</a>
-        <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
-        <label for="navbar-toggle" class="hamburger">
-          <span></span>
-        </label>
-        <ul class="navbar">
-          <li class="navbar-item"><a href="#">Link</a></li>
-          <li class="navbar-item"><a href="#">Link</a></li>
-          <li class="navbar-item"><a href="#">Link</a></li>
-        </ul>
-      </nav>
+      <nav class="responsive-nav">
+          <div class="container">
+            <a href="#" class="brand">Brand</a>
+            <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
+            <label for="navbar-toggle" class="hamburger">
+              <span class="hamburger-icon"></span>
+            </label>
+            <ul class="navbar">
+              <li class="navbar-item"><a href="#">Link</a></li>
+              <li class="navbar-item"><a href="#">Link</a></li>
+              <li class="navbar-item"><a href="#">Link</a></li>
+            </ul>
+          </nav>
+          </div>
     </header>
 
-    <main></main>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>Responsive Nav SCSS</h1>
+                    <p>Responsive navigation sample with styles only.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <footer></footer>
+    <footer class="page-footer">
+        <p class="credit">
+            See on <a href="https://github.com/rzeczuchy/responsive-nav-scss">GitHub</a> | Photo from <a href="https://unsplash.com/@badashphotos">Unsplash</a>
+        </p>
+    </footer>
   </body>
 </html>
