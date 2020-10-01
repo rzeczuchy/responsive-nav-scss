@@ -18,6 +18,7 @@
     text-decoration: none; }
   .responsive-nav .brand {
     color: inherit;
+    font-size: 1.4em;
     z-index: 2; }
   .responsive-nav .brand:hover {
     color: inherit; }
