@@ -9,6 +9,10 @@ $nav-height: 4em;
   box-sizing: border-box;
 }
 
+body, html {
+  overflow: hidden;
+}
+
 .responsive-nav {
   position: absolute;
   z-index: 1;
@@ -69,8 +73,8 @@ $nav-height: 4em;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-    url("https://source.unsplash.com/mXBZo6PvjMk/1920x1080");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("https://source.unsplash.com/_E-LPDWTr_c/1920x1080");
 
   &-text {
     position: absolute;
@@ -136,16 +140,20 @@ $nav-height: 4em;
       right: 0;
       margin-right: 1em;
       height: 100%;
+      width: $icon-width;
       display: flex;
+      justify-content: center;
       align-items: center;
       z-index: 2;
+      transition: all 0.2s ease-in-out;
 
       .line {
         content: "";
         display: block;
         background-color: $light;
-        width: $icon-width;
+        width: 100%;
         height: $line-thickness;
+        transition: transform 0.2s ease-in-out;
       }
 
       &-icon {
@@ -172,6 +180,13 @@ $nav-height: 4em;
       .navbar-item {
         opacity: 1;
         transition-delay: 0.2s;
+      }
+    }
+
+    .navbar-toggle:checked ~ .hamburger {
+      transform: rotate(45deg);
+      .hamburger-icon::before, .hamburger-icon::after {
+        transform: rotate(90deg) scale(0.5, 1);
       }
     }
   }
