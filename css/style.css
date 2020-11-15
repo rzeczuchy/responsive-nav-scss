@@ -58,11 +58,13 @@ body, html {
 .responsive-nav .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   list-style-type: none;
 }
 .responsive-nav .navbar-item {
   padding: 0 1em;
+}
+.responsive-nav .navbar-item:last-of-type {
+  padding: 0 0 0 1em;
 }
 .responsive-nav .navbar-toggle {
   display: none;
@@ -124,6 +126,9 @@ body, html {
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
     transition-delay: 0ms;
+  }
+  .responsive-nav .navbar-item:last-of-type {
+    padding: 0 1em;
   }
   .responsive-nav .hamburger {
     position: absolute;

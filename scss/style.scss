@@ -70,11 +70,14 @@ body, html {
   .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     list-style-type: none;
 
     &-item {
       padding: 0 1em;
+    }
+
+    &-item:last-of-type {
+      padding: 0 0 0 1em;
     }
   }
 
@@ -145,6 +148,10 @@ body, html {
         opacity: 0;
         transition: opacity 0.2s ease-in-out;
         transition-delay: 0ms;
+      }
+
+      &-item:last-of-type {
+        padding: 0 1em;
       }
     }
 
