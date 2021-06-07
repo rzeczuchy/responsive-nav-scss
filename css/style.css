@@ -17,7 +17,7 @@ html {
   z-index: 1;
   width: 100%;
   height: 4em;
-  background-color: #000;
+  background-color: #111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +48,7 @@ html {
 }
 .responsive-nav .btn:hover {
   background-color: #fff;
-  color: #000;
+  color: #111;
 }
 .responsive-nav .container {
   display: flex;
@@ -115,7 +115,7 @@ html {
 
 @media screen and (max-width: 700px) {
   .responsive-nav .navbar {
-    background-color: #000;
+    background-color: #111;
     position: absolute;
     top: 0px;
     left: 0px;
