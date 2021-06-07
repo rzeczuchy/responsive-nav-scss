@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 $light: #fff;
 $dark: #000;
 $primary: #ff0066;
 $nav-height: 4em;
+$text-font: "Montserrat", sans-serif;
+$heading-font: "Merriweather", serif;
 
 * {
   margin: 0;
@@ -9,7 +14,9 @@ $nav-height: 4em;
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
+  font-family: $text-font;
   overflow: hidden;
 }
 
@@ -106,26 +113,28 @@ body, html {
     color: $light;
 
     h1 {
-        color: $primary;
+      color: $primary;
+      font-family: $heading-font;
+      margin-bottom: 0.2em;
     }
   }
 }
 
 .page-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
 
-    .credit {
-        text-align: center;
-        color: $light;
+  .credit {
+    text-align: center;
+    color: $light;
 
-        a {
-            color: $primary;
-        }
+    a {
+      color: $primary;
     }
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -209,7 +218,8 @@ body, html {
 
     .navbar-toggle:checked ~ .hamburger {
       transform: rotate(45deg);
-      .hamburger-icon::before, .hamburger-icon::after {
+      .hamburger-icon::before,
+      .hamburger-icon::after {
         transform: rotate(90deg) scale(0.5, 1);
       }
     }
