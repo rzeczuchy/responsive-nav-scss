@@ -82,7 +82,7 @@ html {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("https://source.unsplash.com/_E-LPDWTr_c/1920x1080");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../assets/jellyfish.jpg");
 }
 .hero-text {
   position: absolute;
@@ -179,7 +179,7 @@ html {
     transform: rotate(45deg);
   }
   .responsive-nav .navbar-toggle:checked ~ .hamburger .hamburger-icon::before,
-.responsive-nav .navbar-toggle:checked ~ .hamburger .hamburger-icon::after {
+  .responsive-nav .navbar-toggle:checked ~ .hamburger .hamburger-icon::after {
     transform: rotate(90deg) scale(0.5, 1);
   }
 }
